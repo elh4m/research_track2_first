@@ -1,8 +1,0 @@
-prefix=/root/rt2/devel
-
-Name: rt2_assignment1
-Description: Description of rt2_assignment1
-Version: 0.0.0
-Cflags: -I/root/rt2/devel/include
-Libs: -L${prefix}/lib 
-Requires: 
