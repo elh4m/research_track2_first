@@ -69,11 +69,4 @@ In this case CoppeliaSim must be started separately (remember to have an instanc
 
 " $ roslaunch rt2_assignment1 sim_bridge.launch "
 
-## Requirements
 
-**Gazebo** is required to run the first launch file (the scene definition is presented in this package).
-**Coppeliasim** is required to run the second launch file [download link](http://www.coppeliarobotics.com/downloads.html)
-**ros1_bridge** ROS2 package, as well as the **ros2** branch of this repository cloned in a ROS2 workspace in order to run the third launch file (again, it's _strongly_ suggested to read the README on that branch for further information).
-
-## Known Issues and Limitations
-If you try running both the Gazebo and CoppeliaSim and the latter seems to not respond to the nodes, whilst the user interface results frozen after having told the system to run, try to **kill the roscore process**; this might be related to Gazebo overwriting some values related to the simulation (probably simulation time) and these not being appropriately "cleaned" once Gazebo is closed.
